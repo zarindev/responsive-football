@@ -77,12 +77,17 @@ nav ul li a:hover{
     background: #ee3e7e;
 }
 .watch-btn{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 500;
     background: #E02C6D;
     padding: 10px 30px;
     margin-top: 30px;
     font-size: 20px;
+}
+.watch-btn:hover{
+    background: #ee3e7e;
 }
 .container{
     display: flex;
@@ -102,7 +107,7 @@ nav ul li a:hover{
     margin-right: 40px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.61);
     padding: 10px; 
-    margin-bottom: 27px;
+    margin-bottom: 35px;
     
 }
 .player h2{
@@ -125,7 +130,56 @@ nav ul li a:hover{
     height: 310px;
     padding: 10px;
 }
-@media (max-width:767px) {
+.second-sec{
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+}
+.second-sec img{
+    width: 567px;
+    height: 427px;
+    padding-left: 50px;
+}
+.text-second{
+    width: 466px;
+    height: 309px;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+    margin-left: 200px;
+    padding-right: 30px;
+}
+.text-second p{
+    color: #6C6C6C;
+    margin-bottom: 30px;
+}
+footer{
+    display: flex;
+}
+.footer-logo img{
+    width: 20%;
+    margin-left: 600px;
+    margin-top: 100px;
+}
+.social-icon{
+    display: flex;
+    margin-top: 200px;
+}
+.social-icon img{
+    width: 40px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    margin-left: 650px;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 700px;
+}
+@media (max-width:767px){
     .checkbtn{
         display: block;
     }
@@ -138,6 +192,7 @@ nav ul li a:hover{
         text-align: center;
         background: #2D25A0;
         transition: all .5s;
+        margin-top: 50px;
     }
     nav ul li{
         display: block;
@@ -147,7 +202,6 @@ nav ul li a:hover{
     nav ul li a{
         font-size: 15px;
         font-weight: bold;
-
     }
     #check:checked ~ ul{
         left: 0;
@@ -156,29 +210,78 @@ nav ul li a:hover{
     .login-btn{
         margin-right: 70px;
     }
-    .first-sec{
-        display: inline-block;
+    header{
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
     }
     .text-first{
-        padding-right: 50px;
+        width: 150px
+        margin-top: 20px;
+    }
+    .img-first{
+        padding-top: 40px;
+    }
+    .players{
+        display: inline-block;
+    }
+    .second-sec{
+        display: inline-block;
+    }
+    .second-sec img{
+        width: 450px;
+    }
+    .text-second{
+        margin-left: 60px;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
     .login-btn{
         margin-right: 50px;
     }
     nav ul{
         margin-left: 50px;
     }
+    nav ul li{
+        margin-right: 10px;
+    }
     .text-first{
-        align-items: center;
+        position: relative;
         font-size: 36px;
-        
     }
-    .img-first{
+    .first-sec img{
+        margin-top: 250px;
+        width: 450px;
+    }
+    .first-sec{
+        margin-left: 150px;
+        margin-bottom: 0;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header{
+        height: 1000px;
+    }
+    .second-sec{
+        display: inline-block;
+        justify-content: center;
+    }
+    .text-second{
+        margin-left: 60px;
+    }
+    .first-sec img{
+        padding-top: 50px;
+        width: 450px;
+        padding-bottom: 0;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer img{
         align-items: center;
     }
-    .text-first{
-        
-    }
+   
 }
