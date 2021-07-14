@@ -18,17 +18,16 @@ header{
 }
 .text-first{
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 650;
     width: 485px;
     height: 230px;
-    font-size: 40px;
     margin-top: 121px;
     margin-left: 156px;
     line-height: 80px;
 }
 .img-first{
-    margin-left: 110px;
+    margin-left: 300px;
     margin-top: 100px;
     margin-right: 130px;
 }
@@ -76,6 +75,45 @@ nav ul li a:hover{
 .login-btn:hover{
     background: #ee3e7e;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 20px;
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.player{
+    width: 330px;
+    height: 474px;
+    margin-right: 40px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.61);
+    padding: 10px; 
+    margin-bottom: 27px;
+    
+}
+.player h2{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+}
+.player p{
+    
+}
+.player h2,p{
+    padding: 10px;
+}
+.player:hover{
+    background-color: rgb(212, 209, 209);
+}
+.player img{
+    width: 310px;
+    height: 310px;
+    padding: 10px;
+}
 @media (max-width:767px) {
     .checkbtn{
         display: block;
@@ -107,5 +145,29 @@ nav ul li a:hover{
     .login-btn{
         margin-right: 70px;
     }
-    
+    .first-sec{
+        display: inline-block;
+    }
+    .text-first{
+        padding-right: 50px;
+    }
+}
+@media (max-width: 1000px) {
+    .login-btn{
+        margin-right: 50px;
+    }
+    nav ul{
+        margin-left: 50px;
+    }
+    .text-first{
+        align-items: center;
+        font-size: 36px;
+        
+    }
+    .img-first{
+        align-items: center;
+    }
+    .text-first{
+        
+    }
 }
