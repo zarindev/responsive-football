@@ -15,6 +15,8 @@ header{
 }
 .first-sec{
     display: flex;
+    justify-content: flex-end;
+    margin-left: 150px;
 }
 .text-first{
     color: white;
@@ -23,13 +25,12 @@ header{
     width: 485px;
     height: 230px;
     margin-top: 121px;
-    margin-left: 156px;
     line-height: 80px;
+    margin-right: 350px;
 }
 .img-first{
-    margin-left: 300px;
     margin-top: 100px;
-    margin-right: 130px;
+    margin-right: 100px;
 }
 nav{
     background: #2D25A0;
@@ -43,7 +44,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 10px;
+    margin: 15px 15px;
 }
 nav ul li a{
     color: white;
@@ -68,12 +69,20 @@ nav ul li a:hover{
     color: white;
     padding: 10px 25px 10px 30px;
     float: right;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-right: 124px;
     font-size: 16px;
 }
 .login-btn:hover{
     background: #ee3e7e;
+}
+.watch-btn{
+    color: white;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 .container{
     display: flex;
@@ -101,7 +110,9 @@ nav ul li a:hover{
     font-family: 'Poppins', sans-serif;
 }
 .player p{
-    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;&display=swap');
+    font-family: 'Poppins', sans-serif;
+    color: #6C6C6C;
 }
 .player h2,p{
     padding: 10px;
